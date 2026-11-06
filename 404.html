@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found - Hoang Tran Vuong</title>
+    <meta name="robots" content="noindex" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("site-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if ((saved || (prefersDark ? "dark" : "light")) === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <nav aria-label="Primary">
+          <a class="brand" href="./">Hoang Tran Vuong</a>
+          <a href="publications/">Publications</a>
+          <a href="cv/">CV</a>
+          <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2.5v2.2M12 19.3v2.2M4.2 12H2M22 12h-2.2M6.1 6.1 4.5 4.5M19.5 19.5l-1.6-1.6M17.9 6.1l1.6-1.6M4.5 19.5l1.6-1.6" /></svg>
+            <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.2 8.2 0 1 0 20 14.5Z" /></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="page" id="main" style="margin-left: 0; max-width: 40rem">
+      <h1>404</h1>
+      <p>This page does not exist. <a href="./">Back to the homepage</a>.</p>
+    </main>
+    <script src="js/site.js"></script>
+  </body>
+</html>

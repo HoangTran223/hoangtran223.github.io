@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Hoang Tran Vuong</title>
+    <meta name="description" content="Curriculum vitae of Hoang Tran Vuong." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("site-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if ((saved || (prefersDark ? "dark" : "light")) === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <nav aria-label="Primary">
+          <a class="brand" href="../">Hoang Tran Vuong</a>
+          <a href="../publications/">Publications</a>
+          <a class="is-active" href="./" aria-current="page">CV</a>
+          <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2.5v2.2M12 19.3v2.2M4.2 12H2M22 12h-2.2M6.1 6.1 4.5 4.5M19.5 19.5l-1.6-1.6M17.9 6.1l1.6-1.6M4.5 19.5l1.6-1.6" />
+            </svg>
+            <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.2 8.2 0 1 0 20 14.5Z" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Profile">
+        <div class="author__avatar">
+          <img src="../Photo-4x6.jpg" alt="Hoang Tran Vuong" />
+        </div>
+        <div class="author__content">
+          <h3 class="author__name">Hoang Tran Vuong</h3>
+          <p class="author__bio">AI Research Resident @ Qualcomm AI Research</p>
+        </div>
+        <div class="author__urls-wrapper">
+          <button class="follow-btn" id="follow-btn" type="button" aria-expanded="false" aria-controls="author-links">
+            Follow
+          </button>
+          <ul class="author__urls" id="author-links">
+            <li class="static-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Hanoi, Vietnam</span></li>
+            <li><a href="mailto:tranvuonghoang208@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a></li>
+            <li><a href="https://scholar.google.com/citations?user=Ep7aknoAAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Google Scholar</a></li>
+            <li><a href="https://github.com/HoangTran223" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a></li>
+            <li><a href="https://huggingface.co/HoangTran223" target="_blank" rel="noopener"><i class="fa-brands fa-huggingface" aria-hidden="true"></i>Hugging Face</a></li>
+            <li><a href="https://www.linkedin.com/in/tranvuonghoang/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+            <li><a href="../CV.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>CV</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="page" id="main">
+        <h1>CV</h1>
+        <div class="cv-download">
+          <a class="button" href="../CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+          <p class="cv-links">
+            <a href="https://scholar.google.com/citations?user=Ep7aknoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            ·
+            <a href="https://github.com/HoangTran223" target="_blank" rel="noopener">GitHub</a>
+            ·
+            <a href="mailto:tranvuonghoang208@gmail.com">Email</a>
+          </p>
+        </div>
+        <div class="cv-frame">
+          <object data="../CV.pdf#view=FitH" type="application/pdf" aria-label="CV PDF preview">
+            <p>
+              This browser cannot show the PDF here.
+              <a href="../CV.pdf" target="_blank" rel="noopener">Open the CV in a new tab</a>.
+            </p>
+          </object>
+        </div>
+        <footer class="site-footer"><p>Last updated November 2026.</p></footer>
+      </main>
+    </div>
+    <script src="../js/site.js"></script>
+  </body>
+</html>

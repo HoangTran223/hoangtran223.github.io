@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hoang Tran Vuong</title>
+    <meta
+      name="description"
+      content="Hoang Tran Vuong is an AI Research Resident at Qualcomm AI Research. Research on knowledge distillation, reinforcement learning, agentic AI, and human–AI alignment."
+    />
+    <meta name="author" content="Hoang Tran Vuong" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hoangtran223.github.io/" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("site-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if ((saved || (prefersDark ? "dark" : "light")) === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <nav aria-label="Primary">
+          <a class="brand" href="./">Hoang Tran Vuong</a>
+          <a href="publications/">Publications</a>
+          <a href="cv/">CV</a>
+          <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2.5v2.2M12 19.3v2.2M4.2 12H2M22 12h-2.2M6.1 6.1 4.5 4.5M19.5 19.5l-1.6-1.6M17.9 6.1l1.6-1.6M4.5 19.5l1.6-1.6" />
+            </svg>
+            <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.2 8.2 0 1 0 20 14.5Z" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Profile">
+        <div class="author__avatar">
+          <!-- Replace images/profile.jpg when you have a portrait. -->
+          <img src="Photo-4x6.jpg" alt="Hoang Tran Vuong" />
+        </div>
+        <div class="author__content">
+          <h3 class="author__name">Hoang Tran Vuong</h3>
+          <p class="author__bio">AI Research Resident @ Qualcomm AI Research</p>
+        </div>
+        <div class="author__urls-wrapper">
+          <button class="follow-btn" id="follow-btn" type="button" aria-expanded="false" aria-controls="author-links">
+            Follow
+          </button>
+          <ul class="author__urls" id="author-links">
+            <li class="static-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Hanoi, Vietnam</span></li>
+            <li>
+              <a href="mailto:tranvuonghoang208@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?user=Ep7aknoAAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Google Scholar</a>
+            </li>
+            <li>
+              <a href="https://github.com/HoangTran223" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+            </li>
+            <li>
+              <a href="https://huggingface.co/HoangTran223" target="_blank" rel="noopener"><i class="fa-brands fa-huggingface" aria-hidden="true"></i>Hugging Face</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/tranvuonghoang/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+            </li>
+            <li>
+              <a href="CV.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>CV</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="page" id="main">
+        <p>Thank you for visiting. My name is Hoang Tran Vuong.</p>
+        <p>
+          I am an <strong>AI Research Resident</strong> at <strong>Qualcomm AI Research</strong> and an
+          <strong>AI Researcher</strong> at <strong>DreamAI Team</strong>. I earned my B.S. in Computer Science from the
+          Talented Program at
+          <a href="https://www.hust.edu.vn/" target="_blank" rel="noopener">Hanoi University of Science and Technology</a>,
+          where I did research at the Data Science Laboratory under
+          <a href="https://scholar.google.com/citations?user=tZ78MoQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Dr. Ngo Van Linh</a>.
+        </p>
+
+        <h2>Research Interest</h2>
+        <p>
+          My work is in machine learning and natural language processing. I currently focus on
+          <strong>knowledge distillation</strong>, <strong>reinforcement learning</strong>, <strong>agentic AI</strong>,
+          and <strong>human–AI alignment</strong>.
+        </p>
+
+        <h2>News</h2>
+        <div class="news-scroll">
+          <ul>
+            <li><strong>[Nov 2026]</strong> <a href="https://arxiv.org/abs/2611.07859v1" target="_blank" rel="noopener"><em>CORE: Coarse-to-Fine Search with Context Management for Deep Research</em></a> is on arXiv and under review at <strong>NAACL 2027</strong>.</li>
+            <li><strong>[2026]</strong> <em>A Survey on Knowledge Distillation of Vision-Language Models</em> was accepted to <strong>EMNLP 2026</strong>.</li>
+            <li><strong>[2026]</strong> <em><i>f</i>-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models</em> was accepted to <strong>ICML 2026</strong>.</li>
+            <li><strong>[2026]</strong> <em>MCW-KD: Multi-Cost Wasserstein Knowledge Distillation for Large Language Models</em> was accepted to <strong>AAAI 2026</strong>.</li>
+            <li><strong>[Aug 2026]</strong> Received the <strong>Odon Vallet Scholarship</strong> from Association Rencontres du Vietnam.</li>
+            <li><strong>[Mar 2026]</strong> Joined <strong>Qualcomm AI Research</strong> as an AI Research Resident.</li>
+            <li><strong>[Nov 2025]</strong> Started as an AI Researcher at <strong>DreamAI Team</strong>, working on knowledge distillation, alignment, and reasoning in large language models.</li>
+          </ul>
+        </div>
+
+        <h2>Education</h2>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>Hanoi University of Science and Technology (HUST)</h3>
+              <p class="role">B.S. in Computer Science, Talented Bachelor Program</p>
+              <p class="meta">School of Information and Communications Technology</p>
+              <div class="chips"><span class="chip soft">GPA 3.71 / 4.0</span></div>
+            </div>
+            <p class="when">Sep 2022 – 2026<br />Hanoi, Vietnam</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>Ha Long High School for Gifted Students</h3>
+              <p class="role">Math honors class</p>
+              <div class="chips"><span class="chip soft">Grade 9.1 / 10</span></div>
+            </div>
+            <p class="when">Aug 2019 – Jun 2022<br />Quang Ninh, Vietnam</p>
+          </div>
+        </article>
+
+        <h2>Experience</h2>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>AI Resident</h3>
+              <p class="role">Qualcomm AI Research</p>
+              <p class="meta">Research residency on real-world AI problems.</p>
+            </div>
+            <p class="when">Mar 2026 – Present</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>AI Researcher</h3>
+              <p class="role">DreamAI Team</p>
+              <p class="meta">Knowledge distillation, human–AI alignment, and reasoning in large language models.</p>
+            </div>
+            <p class="when">Nov 2025 – Present</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>AI Intern</h3>
+              <p class="role">ZenAI</p>
+              <p class="meta">Fine-tuning large language models, building agents, and retrieval and text-generation pipelines.</p>
+            </div>
+            <p class="when">Mar 2025 – Feb 2026</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>Research Student</h3>
+              <p class="role">Data Science Laboratory (DSLab), HUST</p>
+              <p class="meta">
+                <strong>Supervisor:</strong>
+                <a href="https://scholar.google.com/citations?user=tZ78MoQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Dr. Ngo Van Linh</a><br />
+                Natural language processing, knowledge distillation, and optimal transport.
+              </p>
+            </div>
+            <p class="when">Jan 2024 – Nov 2025<br />Hanoi, Vietnam</p>
+          </div>
+        </article>
+
+        <h2>Honors</h2>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>Odon Vallet Scholarship</h3>
+              <p class="role">Association Rencontres du Vietnam</p>
+            </div>
+            <p class="when">Aug 2026</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>The Best of MB Chasing Scholarship</h3>
+              <p class="role">MB Bank</p>
+            </div>
+            <p class="when">Dec 2024</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>Hong Kong International Mathematical Olympiad (HKIMO)</h3>
+              <p class="role">Gold Medal, National Round</p>
+              <p class="meta">Qualified for the International Final.</p>
+            </div>
+            <p class="when">2022</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>Vietnam National Mathematical Olympiad (VMO)</h3>
+              <p class="role">Participant, 2020–2021 and 2021–2022</p>
+              <p class="meta">Represented the province at the national olympiad for two consecutive years.</p>
+            </div>
+            <p class="when">2020 – 2022</p>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="entry__top">
+            <div>
+              <h3>Provincial Mathematical Olympiad</h3>
+              <p class="role">First Prize (2021–2022), Third Prize (2020–2021)</p>
+            </div>
+            <p class="when">2020 – 2022</p>
+          </div>
+        </article>
+
+        <h2>Selected Publications</h2>
+        <div class="note">(*) denotes equal contribution.</div>
+        <div class="selected">
+          <!-- Drop a figure at images/papers/vlm-kd-survey.png -->
+          <img class="paper-fig" src="images/papers/vlm-kd-survey.png" alt="" onload="this.classList.add('is-ready')" />
+          <p>
+            1. <strong>A Survey on Knowledge Distillation of Vision-Language Models.</strong><br />
+            <u class="me">Hoang Tran Vuong</u>*, Dat Dao*, Pham Khanh Chi*, Minh-Phuc Truong*, Quyen Tran, Linh Ngo Van, Thien Huu Nguyen, Thanh-Toan Do, Trung Le<br />
+            <em>Findings of the Association for Computational Linguistics: EMNLP 2026</em>.
+            <a class="badge badge-blue" href="https://aclanthology.org/2026.findings-emnlp.180/" target="_blank" rel="noopener">paper</a>
+            <a class="badge badge-green" href="https://github.com/HoangTran223/Awesome-Knowledge-Distillation-of-VLMs" target="_blank" rel="noopener">code</a>
+            <button class="badge" type="button" data-bib="survey" aria-expanded="false">bib</button>
+          </p>
+
+          <img class="paper-fig" src="images/papers/dispat.png" alt="" onload="this.classList.add('is-ready')" />
+          <p>
+            2. <strong><i>f</i>-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models.</strong><br />
+            <u class="me">Hoang Tran Vuong</u>, Linh Ngo Van, Dang Nguyen, Thin Nguyen, Phuoc Nguyen, Mehrtash Harandi, Trung Le<br />
+            <em>International Conference on Machine Learning</em> (ICML 2026).
+            <a class="badge badge-blue" href="https://icml.cc/virtual/2026/poster/63240" target="_blank" rel="noopener">paper</a>
+            <a class="badge badge-green" href="https://github.com/HoangTran223/DiSPaT" target="_blank" rel="noopener">code</a>
+            <button class="badge" type="button" data-bib="dispat" aria-expanded="false">bib</button>
+          </p>
+
+          <img class="paper-fig" src="images/papers/mcw-kd.png" alt="" onload="this.classList.add('is-ready')" />
+          <p>
+            3. <strong>MCW-KD: Multi-Cost Wasserstein Knowledge Distillation for Large Language Models.</strong><br />
+            <u class="me">Hoang Tran Vuong</u>, Tue Le, Quyen Tran, Linh Ngo Van, Trung Le<br />
+            <em>AAAI Conference on Artificial Intelligence</em> (AAAI 2026).
+            <a class="badge badge-blue" href="https://ojs.aaai.org/index.php/AAAI/article/view/40619" target="_blank" rel="noopener">paper</a>
+            <a class="badge badge-green" href="https://github.com/HoangTran223/MCW-KD" target="_blank" rel="noopener">code</a>
+            <button class="badge" type="button" data-bib="mcw-kd" aria-expanded="false">bib</button>
+          </p>
+
+          <img class="paper-fig" src="images/papers/hicot.png" alt="" onload="this.classList.add('is-ready')" />
+          <p>
+            4. <strong>HiCOT: Improving Neural Topic Models via Optimal Transport and Contrastive Learning.</strong><br />
+            <u class="me">Hoang Tran Vuong</u>*, Tue Le*, Tu Vu*, Tung Nguyen*, Linh Ngo Van, Sang Dinh, Thien Huu Nguyen<br />
+            <em>Findings of the Association for Computational Linguistics: ACL 2025</em>.
+            <a class="badge badge-blue" href="https://aclanthology.org/2025.findings-acl.715/" target="_blank" rel="noopener">paper</a>
+            <a class="badge badge-green" href="https://github.com/HoangTran223/HiCOT" target="_blank" rel="noopener">code</a>
+            <button class="badge" type="button" data-bib="hicot" aria-expanded="false">bib</button>
+          </p>
+        </div>
+        <p>For a complete list, see the <a href="publications/">Publications</a> page.</p>
+
+        <footer class="site-footer"><p>Last updated November 2026.</p></footer>
+      </main>
+    </div>
+    <script src="js/site.js"></script>
+  </body>
+</html>

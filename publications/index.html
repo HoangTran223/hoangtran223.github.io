@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publications - Hoang Tran Vuong</title>
+    <meta name="description" content="Publications of Hoang Tran Vuong." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("site-theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if ((saved || (prefersDark ? "dark" : "light")) === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <nav aria-label="Primary">
+          <a class="brand" href="../">Hoang Tran Vuong</a>
+          <a class="is-active" href="./" aria-current="page">Publications</a>
+          <a href="../cv/">CV</a>
+          <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2.5v2.2M12 19.3v2.2M4.2 12H2M22 12h-2.2M6.1 6.1 4.5 4.5M19.5 19.5l-1.6-1.6M17.9 6.1l1.6-1.6M4.5 19.5l1.6-1.6" />
+            </svg>
+            <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.2 8.2 0 1 0 20 14.5Z" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Profile">
+        <div class="author__avatar">
+          <img src="../Photo-4x6.jpg" alt="Hoang Tran Vuong" />
+        </div>
+        <div class="author__content">
+          <h3 class="author__name">Hoang Tran Vuong</h3>
+          <p class="author__bio">AI Research Resident @ Qualcomm AI Research</p>
+        </div>
+        <div class="author__urls-wrapper">
+          <button class="follow-btn" id="follow-btn" type="button" aria-expanded="false" aria-controls="author-links">
+            Follow
+          </button>
+          <ul class="author__urls" id="author-links">
+            <li class="static-row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Hanoi, Vietnam</span></li>
+            <li><a href="mailto:tranvuonghoang208@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a></li>
+            <li><a href="https://scholar.google.com/citations?user=Ep7aknoAAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Google Scholar</a></li>
+            <li><a href="https://github.com/HoangTran223" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a></li>
+            <li><a href="https://huggingface.co/HoangTran223" target="_blank" rel="noopener"><i class="fa-brands fa-huggingface" aria-hidden="true"></i>Hugging Face</a></li>
+            <li><a href="https://www.linkedin.com/in/tranvuonghoang/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+            <li><a href="../CV.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>CV</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="page" id="main">
+        <h1>Publications</h1>
+        <p class="wordwrap">
+          You can also find my articles on
+          <a href="https://scholar.google.com/citations?user=Ep7aknoAAAAJ&amp;hl=en" target="_blank" rel="noopener">my Google Scholar profile</a>.
+        </p>
+        <div class="note">(*) denotes equal contribution.</div>
+
+        <section class="pub-section">
+          <div class="pub-section__header">
+            <h2>Conference Papers</h2>
+            <span class="pub-section__count">(7)</span>
+          </div>
+
+          <article class="pub-card">
+            <span class="pub-card__index">1</span>
+            <!-- images/papers/vlm-kd-survey.png -->
+            <img class="pub-thumb" src="../images/papers/vlm-kd-survey.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">A Survey on Knowledge Distillation of Vision-Language Models.</p>
+              <p class="pub-card__authors"><u class="me">Hoang Tran Vuong</u>*, Dat Dao*, Pham Khanh Chi*, Minh-Phuc Truong*, Quyen Tran, Linh Ngo Van, Thien Huu Nguyen, Thanh-Toan Do, Trung Le</p>
+              <p class="pub-card__venue"><em>Findings of the Association for Computational Linguistics: EMNLP 2026</em></p>
+              <div class="pub-card__meta">
+                <a class="badge badge-blue" href="https://aclanthology.org/2026.findings-emnlp.180/" target="_blank" rel="noopener">paper</a>
+                <a class="badge badge-green" href="https://github.com/HoangTran223/Awesome-Knowledge-Distillation-of-VLMs" target="_blank" rel="noopener">code</a>
+                <button class="badge" type="button" data-bib="survey" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <span class="pub-card__index">2</span>
+            <img class="pub-thumb" src="../images/papers/dispat.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title"><i>f</i>-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models.</p>
+              <p class="pub-card__authors"><u class="me">Hoang Tran Vuong</u>, Linh Ngo Van, Dang Nguyen, Thin Nguyen, Phuoc Nguyen, Mehrtash Harandi, Trung Le</p>
+              <p class="pub-card__venue"><em>International Conference on Machine Learning</em> (ICML 2026)</p>
+              <div class="pub-card__meta">
+                <a class="badge badge-blue" href="https://icml.cc/virtual/2026/poster/63240" target="_blank" rel="noopener">paper</a>
+                <a class="badge badge-green" href="https://github.com/HoangTran223/DiSPaT" target="_blank" rel="noopener">code</a>
+                <button class="badge" type="button" data-bib="dispat" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <span class="pub-card__index">3</span>
+            <img class="pub-thumb" src="../images/papers/mcw-kd.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">MCW-KD: Multi-Cost Wasserstein Knowledge Distillation for Large Language Models.</p>
+              <p class="pub-card__authors"><u class="me">Hoang Tran Vuong</u>, Tue Le, Quyen Tran, Linh Ngo Van, Trung Le</p>
+              <p class="pub-card__venue"><em>AAAI Conference on Artificial Intelligence</em> (AAAI 2026)</p>
+              <div class="pub-card__meta">
+                <a class="badge badge-blue" href="https://ojs.aaai.org/index.php/AAAI/article/view/40619" target="_blank" rel="noopener">paper</a>
+                <a class="badge badge-green" href="https://github.com/HoangTran223/MCW-KD" target="_blank" rel="noopener">code</a>
+                <button class="badge" type="button" data-bib="mcw-kd" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <span class="pub-card__index">4</span>
+            <img class="pub-thumb" src="../images/papers/swift.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">Token-Level Self-Play with Importance-Aware Guidance for Large Language Models.</p>
+              <p class="pub-card__authors">Tue Le, <u class="me">Hoang Tran</u>, Quyen Tran, Linh Ngo, Mehrtash Harandi, Trung Le</p>
+              <p class="pub-card__venue"><em>Advances in Neural Information Processing Systems</em> (NeurIPS 2025)</p>
+              <div class="pub-card__meta">
+                <a class="badge badge-blue" href="https://neurips.cc/virtual/2025/loc/san-diego/poster/120030" target="_blank" rel="noopener">paper</a>
+                <button class="badge" type="button" data-bib="swift" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <span class="pub-card__index">5</span>
+            <img class="pub-thumb" src="../images/papers/msoo.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">Multi-Surrogate-Objective Optimization for Neural Topic Models.</p>
+              <p class="pub-card__authors">Tue Le*, <u class="me">Hoang Tran Vuong</u>*, Tung Nguyen, Linh Ngo Van, Dinh Viet Sang, Trung Le, Thien Huu Nguyen</p>
+              <p class="pub-card__venue"><em>Findings of the Association for Computational Linguistics: EMNLP 2025</em></p>
+              <div class="pub-card__meta">
+                <a class="badge badge-blue" href="https://aclanthology.org/2025.findings-emnlp.9/" target="_blank" rel="noopener">paper</a>
+                <button class="badge" type="button" data-bib="msoo" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <span class="pub-card__index">6</span>
+            <img class="pub-thumb" src="../images/papers/hicot.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">HiCOT: Improving Neural Topic Models via Optimal Transport and Contrastive Learning.</p>
+              <p class="pub-card__authors"><u class="me">Hoang Tran Vuong</u>*, Tue Le*, Tu Vu*, Tung Nguyen*, Linh Ngo Van, Sang Dinh, Thien Huu Nguyen</p>
+              <p class="pub-card__venue"><em>Findings of the Association for Computational Linguistics: ACL 2025</em></p>
+              <div class="pub-card__meta">
+                <a class="badge badge-blue" href="https://aclanthology.org/2025.findings-acl.715/" target="_blank" rel="noopener">paper</a>
+                <a class="badge badge-green" href="https://github.com/HoangTran223/HiCOT" target="_blank" rel="noopener">code</a>
+                <button class="badge" type="button" data-bib="hicot" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-card">
+            <span class="pub-card__index">7</span>
+            <img class="pub-thumb" src="../images/papers/sam-ntm.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">Sharpness-Aware Minimization for Topic Models with High-Quality Document Representations.</p>
+              <p class="pub-card__authors">Tung Nguyen*, Tue Le*, <u class="me">Hoang Tran Vuong</u>*, Quang Duc Nguyen, Duc Anh Nguyen, Linh Ngo Van, Sang Dinh, Thien Huu Nguyen</p>
+              <p class="pub-card__venue"><em>North American Chapter of the Association for Computational Linguistics</em> (NAACL 2025)</p>
+              <div class="pub-card__meta">
+                <a class="badge badge-blue" href="https://aclanthology.org/2025.naacl-long.231/" target="_blank" rel="noopener">paper</a>
+                <button class="badge" type="button" data-bib="sam-ntm" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="pub-section">
+          <div class="pub-section__header">
+            <h2>Journal Articles</h2>
+            <span class="pub-section__count">(1)</span>
+          </div>
+          <article class="pub-card">
+            <span class="pub-card__index">1</span>
+            <img class="pub-thumb" src="../images/papers/hicolt.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">A Framework for Neural Topic Modeling using Hierarchical Clustering and Contrastive Learning with Optimal Transport.</p>
+              <p class="pub-card__authors">Chi Pham Khanh, <u class="me">Hoang Tran Vuong</u>, Sang Dinh Viet, Linh Ngo Van</p>
+              <p class="pub-card__venue"><em>Neurocomputing</em> (Q1), 2026</p>
+              <div class="pub-card__meta">
+                <a class="badge badge-blue" href="https://www.sciencedirect.com/science/article/abs/pii/S0925231225032023?via%3Dihub" target="_blank" rel="noopener">paper</a>
+                <a class="badge badge-green" href="https://github.com/HoangTran223/HiCOLT" target="_blank" rel="noopener">code</a>
+                <button class="badge" type="button" data-bib="hicolt" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="pub-section">
+          <div class="pub-section__header">
+            <h2>Preprints</h2>
+            <span class="pub-section__count">(4)</span>
+          </div>
+          <article class="pub-card">
+            <span class="pub-card__index">1</span>
+            <img class="pub-thumb" src="../images/papers/core.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">CORE: Coarse-to-Fine Search with Context Management for Deep Research.</p>
+              <p class="pub-card__authors"><u class="me">Hoang Tran Vuong</u>, Ngoc Quan Pham, Hung Bui, Fatih Porikli, Dat Quoc Nguyen</p>
+              <p class="pub-card__venue"><em>Under review at NAACL 2027</em></p>
+              <div class="pub-card__meta">
+                <span class="venue-tag">Under review</span>
+                <a class="badge badge-green" href="https://arxiv.org/abs/2611.07859v1" target="_blank" rel="noopener">arXiv</a>
+                <button class="badge" type="button" data-bib="core" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+          <article class="pub-card">
+            <span class="pub-card__index">2</span>
+            <img class="pub-thumb" src="../images/papers/orthosam.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">OrthoSAM: Orthogonal Perturbations for Sharpness-Aware Minimization.</p>
+              <p class="pub-card__authors"><u class="me">Hoang Tran Vuong</u>*, Minh-Phuc Truong*, Tue Le, Tuan Quang Dam, Son N. Tran, Trung Le</p>
+              <p class="pub-card__venue"><em>Under review at ICLR 2027</em></p>
+              <div class="pub-card__meta">
+                <span class="venue-tag">Under review</span>
+                <button class="badge" type="button" data-bib="orthosam" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+          <article class="pub-card">
+            <span class="pub-card__index">3</span>
+            <img class="pub-thumb" src="../images/papers/rollouts.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">Not All Rollouts Are Negative: Adaptive Polarity in Self-Play Fine-Tuning.</p>
+              <p class="pub-card__venue"><em>Under review at ACL 2027</em></p>
+              <div class="pub-card__meta">
+                <span class="venue-tag">Under review</span>
+                <button class="badge" type="button" data-bib="rollouts" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+          <article class="pub-card">
+            <span class="pub-card__index">4</span>
+            <img class="pub-thumb" src="../images/papers/reasoning-survey.png" alt="" onload="this.classList.add('is-ready')" />
+            <div>
+              <p class="pub-card__title">Beyond the Training Distribution: A Survey of Reasoning Generalization in Large Language Models.</p>
+              <p class="pub-card__authors">Tue Le, Van Dong Le, Hai Dang Luu, Bui Duc Duan, <u class="me">Hoang Tran Vuong</u>, Huy Huu Nguyen, Linh Ngo Van, Ngoc-Thanh Dinh, Son N. Tran, Thien Huu Nguyen, Trung Le</p>
+              <p class="pub-card__venue"><em>Under review at ACL 2027</em></p>
+              <div class="pub-card__meta">
+                <span class="venue-tag">Under review</span>
+                <a class="badge badge-blue" href="https://github.com/tue09/awesome-reasoning-generalization/blob/main/full_paper/paper.pdf" target="_blank" rel="noopener">paper</a>
+                <button class="badge" type="button" data-bib="reasoning-survey" aria-expanded="false">bib</button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <footer class="site-footer"><p>Last updated November 2026.</p></footer>
+      </main>
+    </div>
+    <script src="../js/site.js"></script>
+  </body>
+</html>
