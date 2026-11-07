@@ -295,6 +295,17 @@ html[data-theme="dark"] .theme-btn .ic-moon { display: block; }
 
 .news-scroll li:last-child { border-bottom: 0; }
 
+.news-date {
+  display: inline-block;
+  min-width: 4.5rem;
+  margin-right: 0.15rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--link);
+}
+
 .entry {
   margin: 1rem 0;
   padding: 1.05rem 1.15rem 1.05rem 1.25rem;
@@ -449,6 +460,12 @@ html[data-theme="dark"] .paper__frame { background: #161616; }
 }
 
 .paper__actions .badge:hover { border-color: var(--link); color: var(--link); }
+.paper__actions .badge.is-empty,
+.paper__actions .badge.is-empty:hover {
+  color: var(--text-light);
+  border-color: var(--border);
+  cursor: default;
+}
 
 @media (max-width: 640px) {
   .paper { grid-template-columns: 96px minmax(0, 1fr); gap: 0.75rem; }
