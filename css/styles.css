@@ -409,18 +409,23 @@ html[data-theme="dark"] .theme-btn .ic-moon { display: block; }
 .tag-journal { background: #0e7490; }
 
 .paper__frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 148px;
-  height: auto;
+  height: 128px;
   border: 1px solid var(--border);
   border-radius: 4px;
-  background: transparent;
+  background: #fff;
   overflow: hidden;
   line-height: 0;
 }
 
 .paper__frame img {
   display: none;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
   object-fit: contain;
 }
@@ -474,7 +479,7 @@ html[data-theme="dark"] .theme-btn .ic-moon { display: block; }
 
 @media (max-width: 640px) {
   .paper { grid-template-columns: 96px minmax(0, 1fr); gap: 0.75rem; }
-  .paper__frame { width: 96px; height: auto; }
+  .paper__frame { width: 96px; height: 83px; }
   .news-scroll li { grid-template-columns: 1fr; row-gap: 0.15rem; }
 }
 

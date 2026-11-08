@@ -54,7 +54,7 @@
 }`,
     swift: `@inproceedings{le2025swift,
   title     = {Token-Level Self-Play with Importance-Aware Guidance for Large Language Models},
-  author    = {Le, Tue and Tran, Hoang and Tran, Quyen and Ngo, Linh and Harandi, Mehrtash and Le, Trung},
+  author    = {Le, Tue and Vuong, Hoang Tran and Tran, Quyen and Ngo, Linh and Harandi, Mehrtash and Le, Trung},
   booktitle = {Advances in Neural Information Processing Systems},
   volume    = {38},
   pages     = {133933--133968},
