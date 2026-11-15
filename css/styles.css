@@ -257,7 +257,7 @@ html[data-theme="dark"] .theme-btn .ic-moon { display: block; }
 }
 
 .news-scroll {
-  max-height: 14rem;
+  max-height: 20rem;
   overflow-y: scroll;
   scrollbar-gutter: stable;
   border: 1px solid var(--border);
