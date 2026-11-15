@@ -202,6 +202,14 @@ html[data-theme="dark"] .theme-btn .ic-moon { display: block; }
   color: var(--text-light);
 }
 
+.author__urls .fa-github { color: #24292f; }
+.author__urls .fa-linkedin { color: #0a66c2; }
+.author__urls .icon-hf { color: #ff9d0b; }
+html[data-theme="dark"] .author__urls .fa-github { color: #f0f6fc; }
+.author__urls a:hover .fa-github,
+.author__urls a:hover .fa-linkedin,
+.author__urls a:hover .icon-hf { color: inherit; }
+
 .icon-hf {
   display: inline-block;
   background: currentColor;
