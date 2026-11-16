@@ -240,6 +240,10 @@ html[data-theme="dark"] .author__urls .fa-github { color: #f0f6fc; }
   margin: 0 0 0.8rem;
 }
 
+.page h1.page-title {
+  font-size: 2.25rem;
+}
+
 .page h2 {
   font-family: var(--sans);
   font-size: 1.35rem;
@@ -522,12 +526,12 @@ html[data-theme="dark"] .author__urls .fa-github { color: #f0f6fc; }
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 1.15rem;
+  font-size: 1.55rem;
 }
 
 .pub-section__count {
   color: var(--text-light);
-  font-size: 0.85rem;
+  font-size: 1.55rem;
   font-weight: 700;
 }
 
