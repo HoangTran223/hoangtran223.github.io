@@ -1,0 +1,270 @@
+% Academic CV. Layout follows the original CV and Reference_CV/CV_MinhLe.pdf.
+% Content evidence: SOURCE_NOTES.md. Build: .\build.ps1.
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[left=0.65in,right=0.65in,top=0.5in,bottom=0.5in,footskip=0.25in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{needspace}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\definecolor{CVBlue}{HTML}{1459A6}
+\definecolor{CVRule}{gray}{0.45}
+\hypersetup{
+  colorlinks=true,urlcolor=CVBlue,linkcolor=CVBlue,
+  pdftitle={Hoang Tran Vuong -- Curriculum Vitae},
+  pdfauthor={Hoang Tran Vuong},
+  pdfsubject={Academic curriculum vitae},
+  pdfkeywords={Machine Learning, NLP, Knowledge Distillation, Self-Play, Agents}
+}
+\urlstyle{same}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\color{CVRule}\footnotesize\thepage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\titleformat{\section}{\fontsize{12}{14}\selectfont\bfseries}{}{0pt}{\MakeUppercase}
+  [{\color{CVRule}\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{9pt}{6pt}
+\setlist[itemize]{leftmargin=1.65em,itemsep=2pt,topsep=3pt,parsep=0pt,partopsep=0pt}
+\newcommand{\me}{\textbf{Hoang Tran Vuong}}
+\newcommand{\equal}{\textsuperscript{*}}
+\newcommand{\authorname}[1]{\mbox{#1}}
+\newcommand{\entry}[4]{%
+  \Needspace{5\baselineskip}%
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4}
+  \end{tabularx}\par\nopagebreak
+}
+\newcommand{\publication}[4]{%
+  \par\addvspace{8pt}%
+  \begin{minipage}[t]{\linewidth}
+    \fontsize{11}{13.4}\selectfont
+    \RaggedRight\hyphenpenalty=10000\exhyphenpenalty=10000
+    \if\relax\detokenize{#1}\relax
+      \textcolor{CVBlue}{\textbf{#2}}%
+    \else
+      \href{#1}{\textbf{#2}}%
+    \fi\par
+    #3\par
+    \textit{#4}
+  \end{minipage}\par
+}
+\newcommand{\award}[4]{%
+  \par\addvspace{7pt}%
+  \begin{minipage}[t]{\linewidth}
+    \begin{tabularx}{\linewidth}{@{}Xr@{}}
+      \textbf{#1} & #2
+    \end{tabularx}\par
+    \textit{#3}\par
+    #4
+  \end{minipage}\par
+}
+\newcommand{\cvreference}[4]{%
+  \begin{minipage}[t]{\linewidth}
+    \href{#1}{\textbf{#2}}\par
+    #3\par
+    \href{mailto:#4}{#4}
+  \end{minipage}\par
+}
+
+\begin{document}
+\begin{center}
+  {\fontencoding{OT1}\fontfamily{cmr}\fontseries{bx}\fontshape{n}\selectfont\Huge\uppercase{Hoang Tran Vuong}}\par\vspace{5pt}
+  {\small
+    \href{mailto:tranvuonghoang208@gmail.com}{\faEnvelope\ tranvuonghoang208@gmail.com}
+    \enspace\textbar\enspace
+    \href{https://hoangtran223.github.io/}{\faLink\ hoangtran223.github.io} \enspace\textbar\enspace
+    \href{https://scholar.google.com/citations?user=Ep7aknoAAAAJ}{\faGraduationCap\ Google Scholar} \enspace\textbar\enspace
+    \href{https://github.com/HoangTran223}{\faGithub\ GitHub} \enspace\textbar\enspace
+    \href{https://www.linkedin.com/in/tranvuonghoang/}{\faLinkedin\ LinkedIn}
+  }
+\end{center}
+\vspace{-4pt}
+
+\section{Research Interests}
+My research focuses on the post-training, generalization, and agentic capabilities of large language models (LLMs). I am particularly interested in \textbf{Knowledge Distillation}, \textbf{Self-Play Fine-Tuning}, and \textbf{Deep Research Agents}. I am eager to explore new research directions.
+
+\section{Education}
+\entry{Hanoi University of Science and Technology (HUST)}{Hanoi, Vietnam}
+  {B.S. in Computer Science (Talented Program)}{Sep 2022 -- Sep 2026}
+\begin{itemize}
+  \item Cumulative GPA: 3.71/4.00.
+  \item Graduated with an Excellent Degree.
+\end{itemize}
+
+\section{Research Experience}
+\entry{AI Research Resident}{Mar 2026 -- Present}
+  {Qualcomm AI Research}{Hanoi, Vietnam}
+\begin{itemize}
+  \item Supervisors: \href{https://scholar.google.com/citations?user=HVl7vyEAAAAJ}{Dr. Dat Quoc Nguyen}, \href{https://scholar.google.com/citations?user=AzzJssIAAAAJ}{Dr. Ngoc Quan Pham}, and \href{https://scholar.google.com/citations?user=mDLwSZAAAAAJ}{Dr. Hung Bui}.
+  \item Research Topics: Deep Research, Agentic AI.
+  \item 1 submission under review at \mbox{NAACL 2027} introducing a training-free deep research harness that \mbox{outperforms} baseline harnesses in \mbox{answer accuracy} and evidence recall on corpora of up to 553 million documents, with a corresponding patent granted.
+\end{itemize}
+\vspace{3pt}
+
+\entry{AI Researcher}{Nov 2025 -- Present}
+  {DreamAI Research Group}{Melbourne, Australia}
+\begin{itemize}
+  \item Supervisor: \href{https://scholar.google.com/citations?user=gysdMxwAAAAJ}{Assoc. Prof. Trung Le}, Monash University in Melbourne.
+  \item Research Topics: Knowledge Distillation, Self-Play Fine-Tuning.
+  \item 5 accepted publications at ICML, NeurIPS, AAAI, Findings of ACL, and Findings of EMNLP; \mbox{5 submissions} under review at ICLR, AAAI, ACL, and ACM Computing Surveys.
+\end{itemize}
+\vspace{3pt}
+
+\entry{AI Intern}{Mar 2025 -- Feb 2026}
+  {ZenAI}{Hanoi, Vietnam}
+\begin{itemize}
+  \item Research Topics: LLM Fine-Tuning, Autonomous Agents.
+  \item Applied knowledge distillation and retrieval optimization to improve LLM text generation quality.
+\end{itemize}
+\vspace{3pt}
+
+\entry{Research Student}{Feb 2024 -- Nov 2025}
+  {Data Science Laboratory (DSLab), HUST}{Hanoi, Vietnam}
+\begin{itemize}
+  \item Supervisor: \href{https://scholar.google.com/citations?user=tZ78MoQAAAAJ}{Dr. Linh Ngo Van}, Hanoi University of Science and Technology.
+  \item Research Topics: Optimal Transport, Sharpness-Aware Minimization.
+  \item 3 accepted publications at NAACL, Findings of EMNLP, and Neurocomputing.
+\end{itemize}
+
+\Needspace{8\baselineskip}
+\section{Publications}
+{\small $^{*}$ denotes equal contribution}
+
+\publication{https://aclanthology.org/2026.findings-emnlp.180/}
+  {A Survey on Knowledge Distillation of Vision-Language Models}
+  {\authorname{\me\equal}, \authorname{Dat Dao\equal}, \authorname{Pham Khanh Chi\equal}, \authorname{Minh-Phuc Truong\equal}, \authorname{Quyen Tran}, \authorname{Linh Ngo Van}, \authorname{Thien Huu Nguyen}, \authorname{Thanh-Toan Do}, \authorname{Trung Le}}
+  {Findings of the Association for Computational Linguistics (EMNLP 2026)}
+
+\publication{https://icml.cc/virtual/2026/poster/63240}
+  {$f$-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models}
+  {\authorname{\me}, \authorname{Linh Ngo Van}, \authorname{Dang Nguyen}, \authorname{Thin Nguyen}, \authorname{Phuoc Nguyen}, \authorname{Mehrtash Harandi}, \\
+   \authorname{Trung Le}}
+  {International Conference on Machine Learning (ICML 2026)}
+
+\publication{https://doi.org/10.1609/aaai.v40i39.40619}
+  {MCW-KD: Multi-Cost Wasserstein Knowledge Distillation for Large Language Models}
+  {\authorname{\me}, \authorname{Tue Le}, \authorname{Quyen Tran}, \authorname{Linh Ngo Van}, \authorname{Trung Le}}
+  {AAAI Conference on Artificial Intelligence (AAAI 2026)}
+
+\publication{https://openreview.net/forum?id=3VvdoCcVPU}
+  {Token-Level Self-Play with Importance-Aware Guidance for Large Language Models}
+  {\authorname{Tue Le}, \authorname{\me}, \authorname{Quyen Tran}, \authorname{Linh Ngo Van}, \authorname{Mehrtash Harandi}, \authorname{Trung Le}}
+  {Advances in Neural Information Processing Systems (NeurIPS 2025)}
+
+\publication{https://aclanthology.org/2025.findings-emnlp.9/}
+  {Multi-Surrogate-Objective Optimization for Neural Topic Models}
+  {\authorname{Tue Le\equal}, \authorname{\me\equal}, \authorname{Tung Nguyen}, \authorname{Linh Ngo Van}, \authorname{Dinh Viet Sang}, \authorname{Trung Le}, \\
+   \authorname{Thien Huu Nguyen}}
+  {Findings of the Association for Computational Linguistics (EMNLP 2025)}
+
+\publication{https://aclanthology.org/2025.findings-acl.715/}
+  {HiCOT: Improving Neural Topic Models via Optimal Transport and Contrastive Learning}
+  {\authorname{\me\equal}, \authorname{Tue Le\equal}, \authorname{Tu Vu\equal}, \authorname{Tung Nguyen\equal}, \authorname{Linh Ngo Van}, \authorname{Dinh Viet Sang}, \authorname{Thien Huu Nguyen}}
+  {Findings of the Association for Computational Linguistics (ACL 2025)}
+
+\publication{https://aclanthology.org/2025.naacl-long.231/}
+  {Sharpness-Aware Minimization for Topic Models with High-Quality Document Representations}
+  {\authorname{Tung Nguyen\equal}, \authorname{Tue Le\equal}, \authorname{\me\equal}, \authorname{Quang Duc Nguyen}, \authorname{Duc Anh Nguyen}, \authorname{Linh Ngo Van}, \authorname{Dinh Viet Sang}, \authorname{Thien Huu Nguyen}}
+  {Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2025)}
+
+\publication{https://doi.org/10.1016/j.neucom.2025.132530}
+  {A Framework for Neural Topic Modeling using Hierarchical Clustering and Contrastive Learning with Optimal Transport}
+  {\authorname{Pham Khanh Chi\equal}, \authorname{\me\equal}, \authorname{Dinh Viet Sang}, \authorname{Linh Ngo Van}}
+  {Neurocomputing (Q1, 2025 Impact Factor: 6.7)}
+
+\section{Preprints}
+
+\publication{https://arxiv.org/abs/2611.07859}
+  {CORE: Coarse-to-Fine Search with Context Management for Deep Research}
+  {\authorname{\me}, \authorname{Ngoc Quan Pham}, \authorname{Hung Bui}, \authorname{Fatih Porikli}, \authorname{Dat Quoc Nguyen}}
+  {Under review at the Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2027); Patent Granted}
+
+\publication{}
+  {OrthoSAM: Orthogonal Perturbations for Sharpness-Aware Minimization}
+  {\authorname{\me\equal}, \authorname{Minh-Phuc Truong\equal}, \authorname{Tue Le}, \authorname{Tuan Quang Dam}, \authorname{Son N. Tran}, \authorname{Trung Le}}
+  {Under review at the International Conference on Learning Representations (ICLR 2027)}
+
+\publication{https://www.alphaxiv.org/abs/2611.language-model-distillation-training-contexts}
+  {Knowledge Distillation for Language Models: A Survey of Training Contexts and Supervision}
+  {\authorname{\me\equal}, \authorname{Quoc Phong Dao\equal}, \authorname{Dat Dao\equal}, \authorname{Pham Khanh Chi\equal}, \authorname{Minh-Phuc Truong\equal}, \authorname{Tien-Phat Nguyen\equal}, \authorname{Quyen Tran}, \authorname{Minh Le}, \authorname{Linh Ngo Van}, \authorname{Ngoc-Thanh Dinh}, \authorname{Son N. Tran}, \authorname{Dimitris Metaxas}, \authorname{Thien Huu Nguyen}, \authorname{Trung Le}}
+  {Under review at ACM Computing Surveys (Q1, 2025 Impact Factor: 30.4)}
+
+\publication{}
+  {IMPACT: Importance-Aware Prefix Alignment for Cross-Tokenizer Knowledge Distillation}
+  {\authorname{\me}, \authorname{Pham Khanh Chi}, \authorname{Linh Ngo Van}, \authorname{Ngoc-Thanh Dinh}, \authorname{Thien Huu Nguyen}}
+  {Under review at the AAAI Conference on Artificial Intelligence (AAAI 2027)}
+
+\publication{}
+  {Not All Rollouts Are Negative: Adaptive Polarity in Self-Play Fine-Tuning}
+  {\authorname{\me}, \authorname{Tue Le}, \authorname{Son N. Tran}, \authorname{Duc Anh Nguyen}, \authorname{Kien Do}, \authorname{Trung Le}}
+  {Under review at the Annual Meeting of the Association for Computational Linguistics (ACL 2027)}
+
+\publication{}
+  {Beyond the Training Distribution: A Survey of Reasoning Generalization in Large Language Models}
+  {\authorname{Tue Le\equal}, \authorname{Van Dong Le\equal}, \authorname{Hai Dang Luu\equal}, \authorname{Bui Duc Duan\equal}, \authorname{\me\equal}, \authorname{Huy Huu Nguyen}, \authorname{Linh Ngo Van}, \authorname{Ngoc-Thanh Dinh}, \authorname{Son N. Tran}, \authorname{Thien Huu Nguyen}, \authorname{Trung Le}}
+  {Under review at the Annual Meeting of the Association for Computational Linguistics (ACL 2027)}
+
+\Needspace{35\baselineskip}
+\section{Honors and Awards}
+\award{Odon Vallet Scholarship}{2026}
+  {Association Rencontres du Vietnam}
+  {Recognizes academic excellence and achievements in scientific research.}
+\award{The Best of MB Chasing Scholarship}{2024}
+  {Military Commercial Joint Stock Bank (MB), Vietnam}
+  {Merit scholarship for students at MB's partner universities.}
+\award{Hong Kong International Mathematical Olympiad (HKIMO)}{2022}
+  {Olympiad Champion Education Centre, Hong Kong}
+  {Gold Medal in the Vietnam National Round; qualified for the International Final.}
+\award{Vietnam Mathematical Olympiad (VMO)}{2020 -- 2022}
+  {Ha Long High School for Gifted Students}
+  {Two-time participant in Vietnam's premier high school mathematics competition.}
+
+\Needspace{17\baselineskip}
+\section{References}
+\begin{minipage}[t]{0.48\linewidth}
+  \cvreference{https://scholar.google.com/citations?user=AzzJssIAAAAJ}
+    {Dr. Ngoc Quan Pham}
+    {Staff Engineer\\Qualcomm AI Research, Vietnam}
+    {ngocquan@qti.qualcomm.com}
+  \vspace{8pt}
+  \cvreference{https://scholar.google.com/citations?user=HVl7vyEAAAAJ}
+    {Dr. Dat Quoc Nguyen}
+    {Principal Engineer\\Qualcomm AI Research, Vietnam}
+    {datnq@qti.qualcomm.com}
+  \vspace{8pt}
+  \cvreference{https://scholar.google.com/citations?user=mDLwSZAAAAAJ}
+    {Dr. Hung Bui}
+    {VP of Technology\\Qualcomm AI Research, Vietnam}
+    {hungbui@qti.qualcomm.com}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+  \cvreference{https://scholar.google.com/citations?user=gysdMxwAAAAJ}
+    {Assoc. Prof. Trung Le}
+    {Associate Professor\\Monash University in Melbourne}
+    {trunglm@monash.edu}
+  \vspace{8pt}
+  \cvreference{https://scholar.google.com/citations?user=tZ78MoQAAAAJ}
+    {Dr. Linh Ngo Van}
+    {Lecturer\\Hanoi University of Science and Technology}
+    {linhnv@soict.hust.edu.vn}
+\end{minipage}
+
+\end{document}
